@@ -1,4 +1,4 @@
-//Comment test
+//Comment test v2
 @isTest
 public with sharing class relatedCaseVulnsTest {
 	static testMethod void runTest()
