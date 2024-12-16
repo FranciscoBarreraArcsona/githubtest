@@ -29,4 +29,14 @@ public with sharing class AccountController {
     public static Account getSingleAccount() {
         return [SELECT Id, Name, Phone, Type FROM Account LIMIT 1];
     }
+
+@AuraEnabled(cacheable=true)
+    public static Account getSingleAccount() {
+        return [SELECT Id, Name, Phone, Type FROM Account LIMIT 1];
+    }
+
+@AuraEnabled(cacheable=true)
+    public static Account getSingleAccount() {
+        return [SELECT Id, Name, Phone, Type FROM Account LIMIT 1];
+    }
 }
