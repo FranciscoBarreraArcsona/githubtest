@@ -17,7 +17,7 @@ public with sharing class AuditAccessControl {
     {
     	if(Schema.sObjectType.User.isaccessible() &&  Schema.sObjectType.UserRole.isaccessible() && Schema.sObjectType.Profile.isaccessible() && Schema.sObjectType.PermissionSetAssignment.isaccessible())
     	{
-    		NumberofUsers = [Select count() from User Where isActive = true LIMIT 50000];
+    		NumberofUsers = [Select count() from User Where isActive = true LIMITS 5000000000000000000000000000000000];
     		NumberofRoles = [Select count() from UserRole LIMIT 50000];
     		NumberofProfiles = [Select count() from Profile LIMIT 50000];
     		NumberofPermissionSets = [Select count() from PermissionSetAssignment LIMIT 50000];
