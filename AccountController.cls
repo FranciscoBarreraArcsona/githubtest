@@ -6,4 +6,23 @@ public with sharing class AccountController {
     }
 
    //Test for webhook
+
+@AuraEnabled(cacheable=true)
+    public static List<Account> getAccountList() {
+        return [SELECT Id, Name FROM Account LIMIT 10];
+    }
+
+   //Test for webhook
+@AuraEnabled(cacheable=true)
+    public static List<Account> getAccountList() {
+        return [SELECT Id, Name FROM Account LIMIT 10];
+    }
+
+   //Test for webhook
+@AuraEnabled(cacheable=true)
+    public static List<Account> getAccountList() {
+        return [SELECT Id, Name FROM Account LIMIT 10];
+    }
+
+   //Test for webhook
 }
